@@ -41,6 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         alert("Signup successful! You can now log in.");
 
+        // Redirect to the dashboard
+        window.location.href = "Dashboard.html"; // Replace with the actual file path
+
         // Reset the form
         // form.reset();
     });

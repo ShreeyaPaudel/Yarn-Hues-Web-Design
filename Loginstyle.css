@@ -23,11 +23,6 @@ body {
     align-items: center;
 }
 
-
-
-
-
-
 .logo{
     position: absolute;
     left: 15px;
@@ -49,7 +44,7 @@ body {
     width: 100%;
     max-width: 600px;
     flex: 1;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     margin:0 auto;
     text-align: center;
@@ -64,7 +59,7 @@ body {
 
 h3{
     color:rgb(120, 39, 39) ;
-    margin-top: 45px;
+    margin-top: 10px;
     margin-left: 165;
     font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
@@ -74,7 +69,7 @@ h3{
 
 h4{
     color:rgb(120, 39, 39) ;
-    margin-top: 80px;
+    margin-top: 10px;
     margin-left: 159;
     font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
@@ -104,25 +99,34 @@ form input {
 }
 
 
-#contact p {
+/* #contact p {
     margin-top: 200px;
     margin: 15px 0;
     font-size: 14px;
     white-space: nowrap;
     
-}
+} */
 a{
     color: rgb(120, 39, 39);
     font-family: 'Times New Roman', Times, serif;
 }
-p1{
+p{
+    margin: 5px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+    
+    white-space: nowrap;
+    margin-left: 20px;
+    text-align: left;
+}
+/* P1{
     font-family: 'Times New Roman', Times, serif;
     font-size: smaller;
     margin-top: 100px;
     white-space: nowrap;
     margin-left: 20px;
     text-align: left;
-}
+} */
 
 
 

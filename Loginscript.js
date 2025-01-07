@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (enteredEmail === storedEmail && enteredPassword === storedPassword) {
             alert("Login successful!");
             // Optionally, redirect to another page
-            window.location.href = "dashboard.html"; // Replace with your desired page
+            window.location.href = "Dashboard.html"; // Replace with your desired page
         } else {
             alert("Invalid email or password. Please try again.");
         }

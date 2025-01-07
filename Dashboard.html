@@ -7,6 +7,58 @@
     <link rel = "stylesheet" href="Dashboard.css">
 </head>
 <body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="yarn.png" alt="Logo">
+            <span></span>
+        </div>
+        <div class="navbar-items">
+            <div class="notifications">
+                <button class="notification-btn">🔔</button>
+                <div class="notification-dropdown">
+                    <p>No new notifications</p>
+                <span class="badge">3</span>
+                <button id="security-questions-btn">❓</button>
+
+            </div>
+            <!-- <div class="profile">
+                <img src="profile.jpg" alt="Profile" class="profile-pic">
+            </div> -->
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <div class="button-container">
+            <button class="action-btn" onclick="navigateTo('designs')">Designs</button>
+            <button class="action-btn" onclick="navigateTo('analytics')">Analytics</button>
+            <button class="action-btn" onclick="navigateTo('settings')">Settings</button>
+            
+        </div>
+    </main>
+
+    <div id="security-questions-box" style="display: none;">
+        <h3>Set Up Security Questions</h3>
+        <form id="security-questions-form">
+            <label for="security-question">Choose a question:</label>
+            <select id="security-question" required>
+                <option value="">Select a question</option>
+                <option value="pet_name">What is your pet's name?</option>
+                <option value="mother_maiden_name">What is your mother's maiden name?</option>
+                <option value="birth_city">In which city were you born?</option>
+                <option value="favorite_book">What was the name of your favorite book as a child?</option>
+                <option value="hospital_name">What is the name of the hospital where you were born?</option>
+                <option value="childhood_teacher">What is the name of your childhood teacher?</option>
+                <option value="first_school">What is the name of the first school you attended?</option>
+                <option value="childhood_friend">What is the name of your childhood friend?</option>
+            </select>
+            <br><br>
+            <label for="security-answer">Answer:</label>
+            <input type="text" id="security-answer" placeholder="Enter your answer" required>
+            <br><br>
+            <button type="submit" id="save-security-question">Save</button>
+            <button type="button" id="cancel-security-question">Cancel</button>
+        </form>
+    </div>
     
 </body>
 <script src = "Dashboard.js"></script>
