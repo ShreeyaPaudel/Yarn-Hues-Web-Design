@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designs</title>
+    <link rel="stylesheet" href="Designs.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="Logo.png" alt="Logo">
+        </div>
+        <div class="navbar-items">
+            <div class="notifications">
+                <button class="notification-btn">🔔</button>
+                <div class="notification-dropdown">
+                    <p>No new notifications</p>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile" class="profile-pic">
+            </div>
+        </div>
+    </header>
+
+    <main class="design-page">
+        <h1>Our Designs</h1>
+        <div class="design-buttons">
+            <button class="design-btn Earwarmer-btn" onclick="viewDesign('Earwarmer')">Earwarmer</button>
+            <button class="design-btn Muffler-btn"  onclick="viewDesign('Muffler')">Muffler</button>
+            <button class="design-btn Poncho-btn"  onclick="viewDesign('Poncho')">Poncho</button>
+            <button class="design-btn Hat-btn"  onclick="viewDesign('Hat')">Hat</button>
+            <button class="design-btn Socks-btn"  onclick="viewDesign('Socks')">Socks</button>
+        </div>
+    </main>
+
+    <script src="Designs.js"></script>
+</body>
+</html>

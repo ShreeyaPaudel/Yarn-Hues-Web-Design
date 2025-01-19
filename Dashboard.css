@@ -4,7 +4,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f4f8;
     color: #333;
-    overflow: hidden;
 }
 
 /* Navbar styles */
@@ -26,10 +25,8 @@ body {
 }
 
 .logo img {
-    height: 40px;
+    height: 50px;
     margin-right: 10px;
-    background-image: url(yarn.png);
-    
 }
 
 .navbar-items {
@@ -43,19 +40,24 @@ body {
     cursor: pointer;
 }
 
-.notifications .icon {
-    font-size: 20px;
+.notification-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
 }
 
-.notifications .badge {
+.notification-dropdown {
     position: absolute;
-    top: -5px;
-    right: -10px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 2px 5px;
-    font-size: 12px;
+    top: 30px;
+    right: 0;
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    min-width: 200px;
 }
 
 .profile {
@@ -67,12 +69,12 @@ body {
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 /* Dashboard styles */
 .dashboard {
-    margin-top: 60px; /* Account for navbar height */
+    margin-top: 60px;
     height: calc(100vh - 60px);
     display: flex;
     justify-content: center;
@@ -87,9 +89,10 @@ body {
 
 .action-btn {
     margin: 15px;
-    padding: 15px 30px;
+    padding: 100px 100px;
     font-size: 18px;
-    background-color: #4a90e2;
+    background-image: url(earwarmerpurple.jpg);
+    background-size: contain;
     color: white;
     border: none;
     border-radius: 10px;
@@ -98,7 +101,6 @@ body {
 }
 
 .action-btn:hover {
-    background-color: #357abd;
+    
     transform: scale(1.05);
 }
-

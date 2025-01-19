@@ -1,43 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Handle security question button click
-    const securityQuestionsBtn = document.getElementById("security-questions-btn");
-    const securityQuestionsBox = document.getElementById("security-questions-box");
-    const cancelSecurityQuestionBtn = document.getElementById("cancel-security-question");
+    const notificationBtn = document.getElementById("notification-btn");
+    const notificationDropdown = document.getElementById("notification-dropdown");
 
-    securityQuestionsBtn.addEventListener("click", function () {
-        // Toggle the visibility of the security questions box
-        if (securityQuestionsBox.style.display === "none") {
-            securityQuestionsBox.style.display = "block";
+    notificationBtn.addEventListener("click", function () {
+        // Toggle the display of the notification dropdown
+        if (notificationDropdown.style.display === "none") {
+            notificationDropdown.style.display = "block";
         } else {
-            securityQuestionsBox.style.display = "none";
+            notificationDropdown.style.display = "none";
         }
     });
 
-    // Handle cancel button inside the security questions box
-    cancelSecurityQuestionBtn.addEventListener("click", function () {
-        // Hide the security questions box when cancel is clicked
-        securityQuestionsBox.style.display = "none";
-    });
-
-    // Handle security questions form submission
-    const securityQuestionsForm = document.getElementById("security-questions-form");
-    securityQuestionsForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        // Get the selected question and answer
-        const selectedQuestion = document.getElementById("security-question").value;
-        const answer = document.getElementById("security-answer").value.trim();
-
-        if (selectedQuestion && answer) {
-            // Save to localStorage or handle as needed
-            localStorage.setItem("securityQuestion", selectedQuestion);
-            localStorage.setItem("securityAnswer", answer);
-
-            alert("Security question saved successfully!");
-            // Hide the security questions box
-            securityQuestionsBox.style.display = "none";
-        } else {
-            alert("Please select a question and provide an answer.");
+    // Close the dropdown if clicked outside
+    document.addEventListener("click", function (event) {
+        if (!notificationBtn.contains(event.target) && !notificationDropdown.contains(event.target)) {
+            notificationDropdown.style.display = "none";
         }
     });
+
+
 });
+
